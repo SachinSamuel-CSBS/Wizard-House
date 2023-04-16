@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard House</title>
+    <link rel="stylesheet" href="style/login.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="images/logo.png" alt="">
+    </div>
+    <div class="wrapper">
+        <div class="form">
+            <div class="title">
+                Login
+            </div>
+            <form method="get" action="html/students.html" onsubmit="return validation();">
+                <div class="input_wrap">
+                    <label for="input_text">Email or Username</label>
+                    <div class="input_field">
+                        <input type="text" class="input" id="input_text" placeholder="Your email">
+                    </div>
+                </div>
+                <div class="input_wrap">
+                    <label for="input_password">Password</label>
+                    <div class="input_field">
+                        <input type="password" class="input" id="input_password" placeholder="Your password">
+                    </div>
+                </div>
+                <div class="input_wrap">
+                    <span class="error_msg">Invalid Crendential</span>
+                    <input type="submit" id="login_btn" class="btn disabled" value="Login" disabled="true">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script/login.js"></script>
+
+</body>
+</html>
