@@ -1,5 +1,3 @@
-function validation(){
-
     var input_text = document.querySelector("#input_text");
 	var input_password = document.querySelector("#input_password");
 	var error_msg = document.querySelector(".error_msg");
@@ -23,6 +21,10 @@ function validation(){
     });
     console.log(JSON.parse(window.localStorage.getItem("username")));
     console.log(JSON.parse(window.localStorage.getItem("password")));
+
+
+
+function validation(){
 
 
     if((input_text.value!=JSON.parse(window.localStorage.getItem("username")))||(input_password.value!=JSON.parse(window.localStorage.getItem("password"))))
